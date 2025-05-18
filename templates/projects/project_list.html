@@ -1,0 +1,21 @@
+{% extends 'base_new.html' %}
+{% block content %}
+    <div class="section-padding">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <ul>
+                {% for project in projects %}
+                <li>
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                    {% if project.image %}
+                    <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                    {% endif %}
+                </li>
+                {% empty %}
+                <li>No projects yet.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

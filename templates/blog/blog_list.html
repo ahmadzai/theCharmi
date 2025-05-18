@@ -1,0 +1,16 @@
+{% extends 'base_new.html' %}
+{% block content %}
+    <div class="section-padding">
+        <div class="container">
+            <h1>Blog Posts</h1>
+            {% for post in posts %}
+            <h2><a href="{% url 'blog_detail' post.slug %}">{{ post.title }}</a></h2>
+            {% if post.image %}
+            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+            {% endif %}
+            {% empty %}
+            <p>No posts yet.</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base_new.html' %}
+{% block content %}
+    <div class="section-padding">
+        <div class="container">
+            <div class="contact-form-wrap">
+                <h1>Contact Us</h1> <div id="contact-result"></div>
+                <form hx-post="{% url 'contact_submit' %}"
+                      hx-target="#contact-result"
+                      hx-swap="outerHTML"
+                      hx-on::after-request="if(event.detail.xhr.status === 200) this.reset()">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div>
+                                <input name="name" placeholder="Your Full Name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div>
+                                <input name="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div>
+                                <input name="mobile_number" placeholder="Mobile Number" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div>
+                                <textarea name="message" placeholder="Write a Message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
