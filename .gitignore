@@ -1,7 +1,27 @@
-echo venv/ > .gitignore
-echo __pycache__/ >> .gitignore
-echo *.pyc >> .gitignore
-echo .env >> .gitignore
-echo staticfiles/ >> .gitignore
-echo media/ >> .gitignore
-echo *.sqlite3 >> .gitignore
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Django media and static (runtime)
+media/
+staticfiles/
+
+# Environment variables / secrets
+.env
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-generated
+.DS_Store
+Thumbs.db
