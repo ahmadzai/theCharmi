@@ -31,7 +31,7 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config('ALLOWED_HOSTS').split('+')
 
 # Application definition
 
@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'blog',
     'contact',
     'accounts',
-    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -61,9 +60,15 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_htmx.middleware.HtmxMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',  # For Debug Toolbar
 
 ]
+
+# Conditionally enable Django Debug Toolbar
+if DEBUG:
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+    # Debug Toolbar settings
+    INTERNAL_IPS = ['127.0.0.1', 'localhost']
 
 ROOT_URLCONF = 'thecharmi.urls'
 
@@ -92,11 +97,11 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'thecharmi_db',
-        'USER': 'postgres',  # Replace with your PostgreSQL username
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),  # Replace with your PostgreSQL username
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
     }
 }
 
