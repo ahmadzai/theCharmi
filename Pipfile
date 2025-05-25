@@ -15,6 +15,7 @@ typing-extensions = "==4.13.2"
 tzdata = "==2025.2"
 python-decouple = "*"
 django-jazzmin = "*"
+gunicorn = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
