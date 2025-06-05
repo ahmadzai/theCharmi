@@ -5,7 +5,7 @@
         <div class="homepage-slides">
         {% for slider in sliders %}
                 <div class="single-slide-item">
-                    <div class="image-layer" style="background-image: url('{{ slider.slider_image.url }}');">
+                    <div class="image-layer" style="background-image: url('{{ slider.slider_image.url }}?v={{ slider.updated_at.timestamp }}');">
                         <div class="overlay"></div>
                     </div>
 
