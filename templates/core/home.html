@@ -37,12 +37,12 @@
                 <p>{{ message }}</p>
             </div>
         {% else %}
-            {% for content in home_contents %}
+            {% for content in home_content %}
                 <div class="container">
-                    <h1>{{ home_content.title }}</h1>
-                    <p>{{ home_content.subtitle }}</p>
-                    {% if home_content.hero_image %}
-                    <img src="{{ home_content.hero_image.url }}" alt="Home Page Image">
+                    <h1>{{ content.title }}</h1>
+                    <p>{{ content.subtitle }}</p>
+                    {% if content.hero_image %}
+                    <img src="{{ content.hero_image.url }}" alt="Home Page Image">
                     {% endif %}
                 </div>
             {% endfor %}

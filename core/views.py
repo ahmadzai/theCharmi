@@ -16,8 +16,7 @@ def home(request):
     else:
         context = {
             'home_content': home_content,
-            'sliders': sliders,
-            'message': ''
+            'sliders': sliders
         }
 
     return render(request, 'core/home.html', context)
