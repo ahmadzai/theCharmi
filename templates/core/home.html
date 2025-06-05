@@ -33,7 +33,9 @@
 
     <div class="section-padding">
         {% if message %}
-          <p>{{ message }}</p>
+            <div class="container">
+                <p>{{ message }}</p>
+            </div>
         {% else %}
             {% for content in home_contents %}
                 <div class="container">
