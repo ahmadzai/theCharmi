@@ -3,6 +3,21 @@ from .models import HomeContent, Slider
 
 
 def home(request):
-    home_content = get_object_or_404(HomeContent, pk=1)  # Assuming single HomeContent
+    home_content = HomeContent.objects.all() # load all home contents,
+    # we will add a flag to identify some contents as inactive in the model
     sliders = Slider.objects.all()
-    return render(request, 'core/home.html', {'home_content': home_content, 'sliders': sliders})
+
+    if not home_content.exists():
+        context = {
+            'home_content': [],
+            'sliders': sliders,
+            'message': 'No home content available at the moment.'
+        }
+    else:
+        context = {
+            'home_content': home_content,
+            'sliders': sliders,
+            'message': ''
+        }
+
+    return render(request, 'core/home.html', context)

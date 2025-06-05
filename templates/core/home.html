@@ -32,12 +32,18 @@
     {% endif %}
 
     <div class="section-padding">
-        <div class="container">
-            <h1>{{ home_content.title }}</h1>
-            <p>{{ home_content.subtitle }}</p>
-            {% if home_content.hero_image %}
-            <img src="{{ home_content.hero_image.url }}" alt="Home Page Image">
-            {% endif %}
-        </div>
+        {% if message %}
+          <p>{{ message }}</p>
+        {% else %}
+            {% for content in home_contents %}
+                <div class="container">
+                    <h1>{{ home_content.title }}</h1>
+                    <p>{{ home_content.subtitle }}</p>
+                    {% if home_content.hero_image %}
+                    <img src="{{ home_content.hero_image.url }}" alt="Home Page Image">
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock %}
