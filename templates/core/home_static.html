@@ -1,0 +1,259 @@
+    {% extends 'base_new.html' %}
+{% load static %}
+    {% block content %}
+    <!-- Hero Area -->
+
+    <div class="homepage-slides">
+        <div class="single-slide-item">
+            <div class="image-layer" style="background-image: url({% static 'img/slider/slide-1.jpg' %});">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-8 col-lg-8 wow fadeInUp animated" data-wow-delay=".2s">
+                        <div class="hero-area-content">
+                        <div class="section-title">
+                            <h6>Give your devices a second life</h6>
+                            <h1>Reuse <br> Refurbish, Recylce</h1>
+                        </div>
+                        <p>Extend the lifespan of electronics through ethical reuse and repair</p>
+                        <!--<a href="about.html" class="main-btn primary mt-30">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slide-item hero-area-bg-2">
+            <div class="image-layer" style="background-image: url({% static 'img/slider/slide-3.jpg' %});">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-9 col-lg-9 wow fadeInUp animated" data-wow-delay=".2s">
+                        <div class="hero-area-content">
+                            <div class="section-title">
+                                <h6>Sustainable Tech Solutions</h6>
+                                <h1>Recycle Today <br> For a Greener Tomorrow</h1>
+                            </div>
+                            <p>Every device you recycle helps reduce e-waste and protect the planet</p>
+                            <!-- <a href="about.html" class="main-btn primary mt-30">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slide-item hero-area-bg-3">
+            <div class="image-layer" style="background-image: url({% static 'img/slider/slide-2.jpg' %});">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-9 col-lg-9 wow fadeInUp animated" data-wow-delay=".2s">
+                        <div class="hero-area-content">
+                            <div class="section-title">
+                                <h6>Secure & Responsible Recycling</h6>
+                                <h1>Safeguard Your Data <br> While Saving the Earth</h1>
+                            </div>
+                            <p>We ensure complete data destruction and eco-friendly disposal</p>
+                            <!--<a href="about.html" class="main-btn primary mt-30">Learn More</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-area section-padding">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="about-content-wrap">
+                        <div class="section-title">
+                            <p>E-Waste Disposal & Recycling Services for Businesses, Offices and Dealers</p>
+                            <h2 class="mt-0">Give Electronics a Second Life!</h2>
+                        </div>
+                        <div class="about-content">
+                            <div class="row">
+                                <div class="col-lg-12 col-xl-12">
+                                    <div class="about-content-left">
+                                        <p class="highlight">At The Charmi, we’re passionate about protecting our planet through responsible e-waste recycling.
+                                            From old laptops and desktop computers to servers and smartphones,
+                                            we ensure your electronics are securely processed, reused, or recycled,
+                                            keeping harmful materials out of landfills and supporting a cleaner, more sustainable future.</p>
+
+                                        <p>Join us in turning yesterday’s tech into tomorrow’s opportunity.
+                                        </p>
+                                        <div class="row mt-30">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                <div class="featured-area">
+                                                    <div class="featured-icon">
+                                                        <i class="las la-business-time"></i>
+                                                    </div>
+                                                    <div class="featured-content">
+                                                        <div class="featured-title">
+                                                            <h5>Ontime <br>Scheduled</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                <div class="featured-area">
+                                                    <div class="featured-icon">
+                                                        <i class="las la-stopwatch"></i>
+                                                    </div>
+                                                    <div class="featured-content">
+                                                        <div class="featured-title">
+                                                            <h5>24/7 <br>Services</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                <div class="featured-area">
+                                                    <div class="featured-icon">
+                                                        <i class="las la-money-check-alt"></i>
+                                                    </div>
+                                                    <div class="featured-content">
+                                                        <div class="featured-title">
+                                                            <h5>Recycle <br>& Earn</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="about-img">
+                        <img src="{% static '/img/about/about.jpg' %}" alt="">
+                        <!--
+                        <div class="about-counter">
+                            <div class="counter-icon">
+                                <img src="assets/img/icon/customer-service.png" alt="">
+                            </div>
+                            <div class="counter-number">
+                                <span class="counting" data-counterup-nums="154">4754</span>
+                            </div>
+                            <h6>Happy Customers</h6>
+                        </div>
+                        -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Service Area-->
+    <div class="service-area sky-bg section-padding pb-50">
+        <div class="container">
+            <div class="section-title">
+                <h6>What we’re doing</h6>
+                <h2>Services We Offer</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms"
+                    style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                    <!--Services Single-->
+                    <div class="services-two_single">
+                        <div class="services-two_img-box">
+                            <div class="services-two_img">
+                                <img src="{% static '/img/service/service_1.jpg' %}" alt="">
+                            </div>
+                            <!--
+                            <div class="services-two_icon">
+                                <img src="assets/img/icon/paper.png" alt="">
+                            </div>
+                            -->
+                        </div>
+                        <div class="services-two_content">
+                            <h3 class="services-two_title"><a href="#">Computers/Laptops/IT Equipment Recycling</a>
+                            </h3>
+                            <p class="services-two_text">We recycle computers, laptops, and IT equipment securely and responsibly.
+Give your old electronics a second life while reducing environmental impact.</p>
+                            <!--
+                            <div class="services-two_bottom">
+                                <a href="paper_recycle.html" class="services-one_btn">Read More</a>
+                                <a href="paper_recycle.html" class="services-one_arrow"><span
+                                        class="icon-right-arrow"></span></a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms"
+                    style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                    <!--Services Single-->
+                    <div class="services-two_single">
+                        <div class="services-two_img-box">
+                            <div class="services-two_img">
+                                <img src="{% static '/img/service/service_2.jpg' %}" alt="">
+                            </div>
+                            <!--
+                            <div class="services-two_icon">
+                                <img src="assets/img/icon/paper.png" alt="">
+                            </div>
+                            -->
+                        </div>
+                        <div class="services-two_content">
+                            <h3 class="services-two_title"><a href="#">Electronic Medical Devices Recycling</a>
+                            </h3>
+                            <p class="services-two_text">We safely recycle medical devices with care and compliance.
+Extend the lifecycle of vital equipment through responsible reuse and recycling.</p>
+                            <!--
+                            <div class="services-two_bottom">
+                                <a href="paper_recycle.html" class="services-one_btn">Read More</a>
+                                <a href="paper_recycle.html" class="services-one_arrow"><span
+                                        class="icon-right-arrow"></span></a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms"
+                    style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                    <!--Services Single-->
+                    <div class="services-two_single">
+                        <div class="services-two_img-box">
+                            <div class="services-two_img">
+                                <img src="{% static '/img/service/service_3.jpg' %}" alt="">
+                            </div>
+                            <!--
+                            <div class="services-two_icon">
+                                <img src="assets/img/icon/paper.png" alt="">
+                            </div>
+                            -->
+                        </div>
+                        <div class="services-two_content">
+                            <h3 class="services-two_title"><a href="#">Mobile Devices/Smartphones Recycling</a>
+                            </h3>
+                            <p class="services-two_text">We ensure secure, eco-friendly disposal and repurposing of all mobile electronics.</p>
+                            <!--
+                            <div class="services-two_bottom">
+                                <a href="paper_recycle.html" class="services-one_btn">Read More</a>
+                                <a href="paper_recycle.html" class="services-one_arrow"><span
+                                        class="icon-right-arrow"></span></a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

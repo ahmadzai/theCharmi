@@ -1179,7 +1179,7 @@ hr {
   font-weight: 600;
   line-height: 70px;
   margin: 20px 0;
-  color: #023547;
+  color: #5514a6;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .section-title h2 {
@@ -2556,8 +2556,8 @@ input.form-control {
 
 .about-content-wrap .section-title p {
   padding: 10px 20px;
-  background: #e0f6e9;
-  color: #097e51;
+  background: #efe5f0;
+  color: #022247;
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
@@ -2673,7 +2673,7 @@ input.form-control {
 .featured-area .featured-icon i {
   font-size: 35px;
   font-weight: 300;
-  color: #097E51;
+  color: #5514a6;
 }
 .featured-area .featured-content {
   display: flex;
