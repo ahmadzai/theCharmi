@@ -2,8 +2,78 @@
 {% block content %}
     <div class="section-padding">
         <div class="container">
+            <div class="row">
+
+                <!-- Box 1 -->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="contact-box">
+                        <div class="icon-container">
+                            <i class="la la-map-marker"></i>
+                        </div>
+                        <div>
+                            <h5>USA</h5>
+                            <p class="mb-1">Natomas, Sacramento, California</p>
+                            <p class="mb-1">
+                                <i class="la la-whatsapp whatsapp-icon me-1"></i>
+                                <a href="https://wa.me/19162988029" target="_blank" class="phone-link">+1 91 629 880
+                                    29</a>
+                            </p>
+                            <p class="mb-0">
+                                <i class="la la-envelope me-1"></i>
+                                <a href="mailto:info@thecharmi.com" class="email-link">info@thecharmi.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="contact-box">
+                        <div class="icon-container">
+                            <i class="la la-map-marker"></i>
+                        </div>
+                        <div>
+                            <h5>United Arab Emirates</h5>
+                            <p class="mb-1">Coming Soon..!</p>
+                            <p class="mb-1">
+                                <i class="la la-whatsapp whatsapp-icon me-1"></i>
+                                <a href="https://wa.me/93777595333" target="_blank" class="phone-link">+93 777 595
+                                    333</a>
+                            </p>
+                            <p class="mb-0">
+                                <i class="la la-envelope me-1"></i>
+                                <a href="mailto:uae@thecharmi.com" class="email-link">uae@thecharmi.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="contact-box">
+                        <div class="icon-container">
+                            <i class="la la-map-marker"></i>
+                        </div>
+                        <div>
+                            <h5>Afghanistan/Kabul</h5>
+                            <p class="mb-1">Kot-E Sangee, Keftan Zadran Computer Market, 3rd Flour, Muzamil Computer</p>
+                            <p class="mb-1">
+                                <i class="la la-whatsapp whatsapp-icon me-1"></i>
+                                <a href="https://wa.me/93777595333" target="_blank" class="phone-link">+93 777 595
+                                    333</a>
+                            </p>
+                            <p class="mb-0">
+                                <i class="la la-envelope me-1"></i>
+                                <a href="mailto:kabul@thecharmi.com" class="email-link">kabul@thecharmi.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="contact-form-wrap">
-                <h1>Contact Us</h1> <div id="contact-result"></div>
+                <h2>Write To Us</h2>
+                <div id="contact-result"></div>
                 <form hx-post="{% url 'contact_submit' %}"
                       hx-target="#contact-result"
                       hx-swap="outerHTML"

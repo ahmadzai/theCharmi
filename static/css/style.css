@@ -1700,6 +1700,33 @@ input.form-control {
   display: flex;
   gap: 10px;
 }
+
+.contact-box {
+      background-color: #efe5f0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .icon-container {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+    .whatsapp-icon {
+      color: #25D366;
+    }
+    .phone-link, .email-link {
+      text-decoration: none;
+      color: #212529;
+    }
+    .phone-link:hover, .email-link:hover {
+      text-decoration: underline;
+    }
+
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-top .contact-info {
     font-size: 13px;
@@ -7284,7 +7311,7 @@ ul.contact-list li i {
 }
 
 .contact-form-wrap {
-  padding-left: 60px;
+  padding-left: 0px;
 }
 @media (max-width: 767px) {
   .contact-form-wrap {
