@@ -89,6 +89,28 @@
 		],
 	  });
 
+	// address-slider
+    (function () {
+  var currentIndex = 0;
+  var $slides = document.querySelectorAll('.address-slider .address-slide');
+  var totalSlides = $slides.length;
+
+  function showSlide(index) {
+    $slides.forEach(function (slide, i) {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  function startSlider() {
+    showSlide(currentIndex);
+    setInterval(function () {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }, 7000);
+  }
+
+  startSlider();
+})();
 
 	//Home Page Slider
 
